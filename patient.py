@@ -12,6 +12,21 @@ class Patient:
         self.physician = physician
         self.gender = gender
 
+    def __dict__(self):
+        return {
+            'firstname': self.firstname,
+            'lastname': self.lastname,
+            'ID': self.ID,
+            'DOB_M': self.DOB_M,
+            'DOB_D': self.DOB_D,
+            'DOB_Y': self.DOB_Y,
+            'DOS_M': self.DOS_M,
+            'DOS_D': self.DOS_D,
+            'DOS_Y': self.DOS_Y,
+            'physician': self.physician,
+            'gender': self.gender
+        }
+
     def getFirstName(self):
         return self.firstname
     def getLastName(self):
