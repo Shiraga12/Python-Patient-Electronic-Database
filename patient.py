@@ -123,6 +123,18 @@ class Billing:
         self.year       = year
         self.procedure  = procedure
 
+    def __dict__(self):
+        return {
+            'name': self.name,
+            'hospital': self.hospital,
+            'doctor': self.doctor,
+            'diagnosis': self.diagnosis,
+            'month': self.month,
+            'day': self.day,
+            'year': self.year,
+            'procedure': self.procedure
+        }
+
     def getName(self):
         return self.name
     def getHospital(self):
